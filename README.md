@@ -6,6 +6,7 @@ Use to screen the file contigs.prof for sequences with large numbers of repeats.
 
 It outputs a file called Output Files:
 	Best_Contigs.txt - a list of contigs and a number representing the depth of reads in that contig, as a proxy for the repetitiveness of that contig.  The cutoff for the depth needed is 1000, which can be changed inside the script.
+	
 	PrimerTargets.txt- a file that contains, for each of the contigs returned in Best_Contigs.txt, the original contig sequence, the depth profile for the entire sequence, the depth profile for the highly repetitive region and the sequence of the highly repetitive region.  The depth considered to be highly repetitive is by default 1000 or the maximum depth +/- 25% of the maximum depth, whichever is less.  This can be changed within the script.  See RepeatExplorer documentation for details of the profile files.  
 
 Usage:
